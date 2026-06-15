@@ -18,7 +18,7 @@ const projects = [
     tagline: "Rideshare coordination for students",
     description:
       "Web app simplifying rideshare coordination for international and out-of-state UMass students commuting to Boston Logan Airport. Facilitated over 150 rides in pilot with 50 users.",
-    tech: ["Ruby on Rails", "JavaScript", "SCSS", "HTML"],
+    tech: ["React.js", "Node.js", "PostgreSQL", "JWT"],
     color: "#34A853",
     metrics: "150+ rides · 40% less coordination time",
     link: null,
