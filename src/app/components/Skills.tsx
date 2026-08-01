@@ -43,9 +43,6 @@ export function Skills() {
           className="mb-14"
         >
           <div className="flex items-center gap-3 mb-3">
-            {["#4285F4", "#EA4335", "#FBBC05", "#34A853"].map((c, i) => (
-              <div key={i} className="w-2 h-2 rounded-full" style={{ backgroundColor: c }} />
-            ))}
             <span
               className="text-xs uppercase tracking-widest"
               style={{ color: "#5f6368", fontFamily: "'JetBrains Mono', monospace" }}

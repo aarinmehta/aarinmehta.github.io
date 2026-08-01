@@ -1,15 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Github, Linkedin, Mail, ArrowDown, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import resume from "../../assets/Aarin Resume.pdf";
 import headshot from "../../assets/grad headshot.jpeg";
-
-const googleDots = [
-  { color: "#4285F4", delay: 0 },
-  { color: "#EA4335", delay: 0.1 },
-  { color: "#FBBC05", delay: 0.2 },
-  { color: "#34A853", delay: 0.3 },
-];
 
 const rotatingPhrases = [
   { text: "full-stack apps.", color: "#4285F4" },
@@ -238,25 +231,6 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Google dots row */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-          className="flex items-center gap-3 mt-16"
-        >
-          {googleDots.map((dot, i) => (
-            <div key={i} className="w-3 h-3 rounded-full" style={{ backgroundColor: dot.color }} />
-          ))}
-          <div className="h-px flex-1 ml-2" style={{ backgroundColor: "rgba(0,0,0,0.1)" }} />
-          <button
-            onClick={() => document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })}
-            className="flex items-center gap-1.5 text-xs hover:text-[#4285F4] transition-colors"
-            style={{ color: "#5f6368", fontFamily: "'Inter', sans-serif" }}
-          >
-            Scroll to explore <ArrowDown size={12} />
-          </button>
-        </motion.div>
       </div>
     </section>
   );
