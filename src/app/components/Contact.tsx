@@ -1,11 +1,10 @@
 import { motion } from "motion/react";
-import { Mail, Github, Linkedin, Phone } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const links = [
   { icon: Mail, label: "aarin1951@gmail.com", href: "mailto:aarin1951@gmail.com", color: "#EA4335" },
   { icon: Github, label: "github.com/aarinmehta", href: "https://github.com/aarinmehta", color: "#202124" },
   { icon: Linkedin, label: "linkedin.com/in/mehtaaarin", href: "https://linkedin.com/in/mehtaaarin/", color: "#0077b5" },
-  { icon: Phone, label: "(267) 721-3457", href: "tel:2677213457", color: "#34A853" },
 ];
 
 export function Contact() {
