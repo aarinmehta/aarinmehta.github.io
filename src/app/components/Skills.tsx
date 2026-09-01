@@ -4,7 +4,7 @@ const skillGroups = [
   {
     category: "Languages",
     color: "#4285F4",
-    skills: ["Java", "Python", "JavaScript", "TypeScript", "Swift", "Ruby", "SQL", "HTML", "CSS"],
+    skills: ["Java", "Python", "JavaScript", "TypeScript", "C++", "Swift", "Ruby", "SQL", "HTML", "CSS"],
   },
   {
     category: "Frontend",
