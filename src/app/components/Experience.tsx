@@ -3,6 +3,19 @@ import { motion } from "motion/react";
 const jobs = [
   {
     company: "Amazon",
+    role: "Software Development Engineer",
+    period: "Jul 2026 – Present",
+    location: "New York, NY",
+    color: "#FF9900",
+    logo: "amzn",
+    bullets: [
+      "Extended a high-scale authentication service to issue placeholder transitive-auth (TA) tokens for unsupported identity providers, gating subject-less tokens behind a per-client feature flag to prevent unintended exposure — unblocked a downstream team stalled for ~1 month",
+      "Designed and built a distributed authorization cache for token issuance on a high-throughput authentication path, reducing p99 latency by 30% and offloading repeated authorization checks from the critical request path",
+    ],
+    tags: ["OAuth 2.0", "Distributed Systems", "Auth", "Java", "AWS"],
+  },
+  {
+    company: "Amazon",
     role: "Software Development Engineer Intern",
     period: "May 2025 – Aug 2025",
     location: "New York, NY",

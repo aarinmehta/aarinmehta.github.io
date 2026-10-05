@@ -4,22 +4,22 @@ const skillGroups = [
   {
     category: "Languages",
     color: "#4285F4",
-    skills: ["Java", "Python", "JavaScript", "TypeScript", "C++", "Swift", "Ruby", "SQL", "HTML", "CSS"],
+    skills: ["Java", "Python", "JavaScript", "TypeScript", "C++", "Ruby", "SQL", "HTML", "CSS"],
   },
   {
     category: "Frontend",
     color: "#EA4335",
-    skills: ["React", "React Native", "SwiftUI", "SCSS", "Tailwind CSS"],
+    skills: ["React", "Node.js", "FastAPI", "Ruby on Rails", "Tailwind CSS"],
   },
   {
     category: "Backend & Tools",
     color: "#FBBC05",
-    skills: ["Node.js", "Vapor", "Ruby on Rails", "Git", "GitHub", "Jest", "RSpec", "Jira", "Agile"],
+    skills: ["OAuth 2.0", "Distributed Systems", "Auth & Identity", "Git", "Jest", "RSpec", "Jira", "Agile"],
   },
   {
     category: "AWS / Cloud",
     color: "#34A853",
-    skills: ["Lambda", "Cognito", "API Gateway", "CloudWatch", "X-Ray", "DynamoDB"],
+    skills: ["Lambda", "Cognito", "API Gateway", "CloudWatch", "X-Ray", "DynamoDB", "S3"],
   },
 ];
 

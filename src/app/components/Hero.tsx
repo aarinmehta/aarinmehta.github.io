@@ -127,7 +127,7 @@ export function Hero() {
                 color: "#5f6368",
               }}
             >
-              Software engineer with internship experience at Amazon, UMass IT, and Expedia. I like building things that are fast, clean, and actually useful — full-stack apps, backend APIs, and cloud infrastructure. When I'm not coding, you'll find me at the gym or watching a movie.
+              Currently at Amazon, I'm building identity, authorization, and governance systems on their OAuth 2.0 platform, covering delegated access, enterprise trust, and AI agent security. When I'm not coding, you'll find me at the gym or watching a movie.
             </motion.p>
 
             <motion.div
