@@ -24,6 +24,7 @@ const education = {
   gpa: "3.83",
   grad: "May 2026",
   honors: ["Dean's Honors List", "Chancellor's Award"],
+  activities: ["Resident Assistant (RA)", "Machine Learning Club", "Classroom Access Assistant"],
 };
 
 export function Skills() {
@@ -155,6 +156,32 @@ export function Skills() {
                     </span>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-6 pt-5 border-t" style={{ borderColor: "rgba(0,0,0,0.07)" }}>
+                <div
+                  className="text-xs uppercase tracking-wider mb-3"
+                  style={{ color: "#34A853", fontFamily: "'JetBrains Mono', monospace", fontWeight: 500 }}
+                >
+                  Activities & Clubs
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {education.activities.map((a) => (
+                    <span
+                      key={a}
+                      className="px-2.5 py-1 rounded-full text-xs cursor-default whitespace-nowrap"
+                      style={{
+                        backgroundColor: "#ffffff",
+                        color: "#202124",
+                        border: "1px solid rgba(0,0,0,0.08)",
+                        fontFamily: "'Inter', sans-serif",
+                        fontWeight: 500,
+                      }}
+                    >
+                      {a}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>

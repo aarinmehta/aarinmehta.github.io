@@ -10,7 +10,7 @@ const jobs = [
     logo: "amzn",
     bullets: [
       "Leading peak-readiness for a tier-1 authentication service in the retail critical path during Black Friday / Cyber Monday, owning operational-readiness inputs across five categories (runbooks, mitigation levers, certificates, dependency risks, traffic forecasts) and validating capacity for a ~3x surge to ~2.8M TPS across ~10 production regions",
-      "Extended a high-scale authentication service to issue placeholder transitive-auth (TA) tokens for unsupported identity providers, gating subject-less tokens behind a per-client feature flag to prevent unintended exposure — unblocked a downstream team stalled for ~1 month",
+      "Extended a high-scale authentication service to issue placeholder transitive-auth (TA) tokens for unsupported identity providers, gating subject-less tokens behind a per-client feature flag to prevent unintended exposure, unblocking a downstream team stalled for ~1 month",
       "Designed and built a distributed authorization cache for token issuance on a high-throughput authentication path, reducing p99 latency by 30% and offloading repeated authorization checks from the critical request path",
     ],
     tags: ["OAuth 2.0", "Distributed Systems", "Auth", "Java", "AWS"],
@@ -24,7 +24,7 @@ const jobs = [
     logo: "amzn",
     bullets: [
       "Designed and developed an internal portal system, reducing network configuration lookup time by 70%",
-      "Architected secure backend auth using AWS Cognito, API Gateway, and internal services — 40% better access control",
+      "Architected secure backend auth using AWS Cognito, API Gateway, and internal services, improving access control by 40%",
       "Achieved 99.9% availability and 60% faster API response via serverless architecture (Lambda + API Gateway)",
       "Built monitoring with CloudWatch and X-Ray, increasing incident detection speed by 45%",
     ],
