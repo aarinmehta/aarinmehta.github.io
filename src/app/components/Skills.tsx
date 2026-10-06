@@ -4,22 +4,17 @@ const skillGroups = [
   {
     category: "Languages",
     color: "#4285F4",
-    skills: ["Java", "Python", "JavaScript", "TypeScript", "C++", "Ruby", "SQL", "HTML", "CSS"],
+    skills: ["C++", "Java", "Python", "JavaScript", "TypeScript", "SQL (PostgreSQL)", "Ruby", "HTML", "CSS"],
   },
   {
-    category: "Frontend",
-    color: "#EA4335",
-    skills: ["React", "Node.js", "FastAPI", "Ruby on Rails", "Tailwind CSS"],
-  },
-  {
-    category: "Backend & Tools",
-    color: "#FBBC05",
-    skills: ["OAuth 2.0", "Distributed Systems", "Auth & Identity", "Git", "Jest", "RSpec", "Jira", "Agile"],
-  },
-  {
-    category: "AWS / Cloud",
+    category: "Cloud / Infra",
     color: "#34A853",
-    skills: ["Lambda", "Cognito", "API Gateway", "CloudWatch", "X-Ray", "DynamoDB", "S3"],
+    skills: ["Lambda", "Cognito", "API Gateway", "CloudWatch", "X-Ray", "DynamoDB", "S3", "Docker", "Kubernetes"],
+  },
+  {
+    category: "Tools / Frameworks",
+    color: "#EA4335",
+    skills: ["OAuth 2.0", "Distributed Systems", "Auth & Identity", "React", "Node.js", "FastAPI", "Ruby on Rails", "Tailwind CSS", "gRPC/Protobuf", "Git", "RSpec", "Jest", "Jira", "Agile"],
   },
 ];
 
@@ -29,7 +24,6 @@ const education = {
   gpa: "3.83",
   grad: "May 2026",
   honors: ["Dean's Honors List", "Chancellor's Award"],
-  courses: ["Computer Systems & Networks", "Data Management", "Discrete Math", "Algorithms"],
 };
 
 export function Skills() {
@@ -120,26 +114,24 @@ export function Skills() {
               className="rounded-2xl p-7 border h-full"
               style={{ backgroundColor: "#f8f9fa", borderColor: "rgba(0,0,0,0.07)" }}
             >
-              <div
-                className="text-xs uppercase tracking-wider mb-4"
-                style={{ color: "#4285F4", fontFamily: "'JetBrains Mono', monospace", fontWeight: 500 }}
-              >
-                Education
-              </div>
-
               <h3
                 style={{
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontWeight: 700,
-                  fontSize: "1.05rem",
+                  fontSize: "1.15rem",
                   color: "#202124",
-                  lineHeight: 1.3,
                 }}
               >
-                {education.school}
+                Education
               </h3>
+              <p style={{ color: "#4285F4", fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "0.85rem" }}>
+                {education.school}
+              </p>
               <p style={{ color: "#5f6368", fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", marginTop: 4 }}>
                 {education.degree}
+              </p>
+              <p style={{ color: "#5f6368", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem", marginTop: 4 }}>
+                Graduation Date: {education.grad}
               </p>
 
               <div className="mt-4 flex items-center gap-3">
@@ -152,9 +144,6 @@ export function Skills() {
                   </span>
                   <span style={{ color: "#4285F4", fontSize: "0.7rem", marginLeft: 3 }}>GPA</span>
                 </div>
-                <span style={{ color: "#5f6368", fontFamily: "'JetBrains Mono', monospace", fontSize: "0.75rem" }}>
-                  {education.grad}
-                </span>
               </div>
 
               <div className="mt-5 space-y-2">
@@ -166,31 +155,6 @@ export function Skills() {
                     </span>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-5 pt-5 border-t" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
-                <div
-                  className="text-xs uppercase tracking-wider mb-3"
-                  style={{ color: "#5f6368", fontFamily: "'JetBrains Mono', monospace" }}
-                >
-                  Coursework
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {education.courses.map((c) => (
-                    <span
-                      key={c}
-                      className="px-2 py-1 rounded text-xs"
-                      style={{
-                        backgroundColor: "#ffffff",
-                        color: "#5f6368",
-                        border: "1px solid rgba(0,0,0,0.1)",
-                        fontFamily: "'Inter', sans-serif",
-                      }}
-                    >
-                      {c}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           </motion.div>

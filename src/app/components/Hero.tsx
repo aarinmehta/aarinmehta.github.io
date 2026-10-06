@@ -166,7 +166,7 @@ export function Hero() {
               </a>
               <a
                 href={resume}
-                download="Aarin_Mehta_Resume.pdf"
+                download="Aarin Resume.pdf"
                 className="flex items-center gap-2 px-6 py-3 rounded-full text-sm border transition-all duration-200 hover:bg-gray-50"
                 style={{ borderColor: "rgba(0,0,0,0.15)", color: "#202124", fontFamily: "'Inter', sans-serif", fontWeight: 500 }}
               >
